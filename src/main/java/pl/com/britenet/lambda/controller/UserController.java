@@ -58,6 +58,7 @@ public class UserController {
             userToUpdate.setEmail(email);
             userToUpdate.setName(name);
             userRepository.save(userToUpdate);
+            System.out.println("바보");
             return new ResponseEntity<String>("updated", HttpStatus.OK);
         }
         return new ResponseEntity<String>("bad request", HttpStatus.BAD_REQUEST);
