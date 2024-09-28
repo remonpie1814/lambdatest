@@ -25,6 +25,7 @@ public class UserController {
     Iterable<User> findAll() {
         return userRepository.findAll();
     }
+    //장충동 왕족발 보쌈~
 
     @PostMapping
     public @ResponseBody
